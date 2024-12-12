@@ -6560,8 +6560,10 @@ function loadCruiseShip(ddlCruiseShip, arrFilter) {
 
 function initPopups(tabwidget) {
 
-    var lenMaxAgeChild = ($HotelsMaxAgeChild != 0) ? $HotelsMaxAgeChild : 12;
+    var lenMaxAgeChild = ($HotelsMaxAgeChild != 0) ? $HotelsMaxAgeChild : 17;
     for (var i = 0; i < lenMaxAgeChild + 1; i++) {
+        console.log(lenMaxAgeChild);
+        
         $("div[id='divPaxRoomPopup'] select").append("<option value=\"" + i.toString() + "\">" + i.toString() + "</option>");
     }
 
@@ -8174,6 +8176,7 @@ $(document).ready(function() {
             }
         }
     }
+    if(document.querySelector('fieldset.fdsAirTripType.upTripType'))
     document.querySelector('fieldset.fdsAirTripType.upTripType').addEventListener('click',target =>{    
         changeFormat();        
     })
@@ -8209,6 +8212,7 @@ $(document).ready(function() {
 
     setTimeout(() => {
         if (window.innerWidth >= 1024) {
+            if(document.querySelector('.fdsAirTripType')){
             document.querySelector('.fdsAirTripType').addEventListener('click',(check)=>{
 
                 if((check.target.tagName == "INPUT"  && check.target.checked == true && check.target.id == "rdAirTripTypeMD") || check.target.classList.value.includes("divAirTripTypeMD")){
@@ -8219,6 +8223,7 @@ $(document).ready(function() {
                 }
                 
             })
+        }
         }
     }, 1000);
 

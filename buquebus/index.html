@@ -2,44 +2,50 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!-- assets -->
-    <!-- css -->
-    <link rel="stylesheet" href="https://cmsdemo.netactica.com/Portals/_default/skins/xcillion/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-    <link href="css/jquery.autocomplete.css" rel="stylesheet">
-    <link href="css/jquery.bvalidator.css" rel="stylesheet">
-    <link href="css/jquery.ui.css" rel="stylesheet">
-    <link href="css/searchForm2.datepicker.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style2.min.css">
-    <!-- scripts -->
-
-    
-    <script type="text/javascript" src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/cities-es.js"></script>
-    <script type="text/javascript" src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/airlines-es.js"></script>
-    <script type="text/javascript" src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/airports-es.js"></script>
-    <script type="text/javascript" src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/airportscities-es.js"></script>
-    <script type="text/javascript" src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/buscompanies-es.js"></script>
-    <script type="text/javascript" src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/neighborhood-es.js"></script>
-    
-
-     <!-- js -->
+<!-- css -->
+<link rel="stylesheet"
+    href="https://cmsdemo.netactica.com/Portals/_default/skins/xcillion/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<link href="css/jquery.autocomplete.css" rel="stylesheet">
+<link href="css/jquery.bvalidator.css" rel="stylesheet">
+<link href="css/jquery.ui.css" rel="stylesheet">
+<link href="css/searchForm2.datepicker.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style2.min.css">
+<!-- scripts -->
 
 
-    
-    <script>
+<script type="text/javascript" src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/cities-es.js"></script>
+<script type="text/javascript"
+    src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/airlines-es.js"></script>
+<script type="text/javascript"
+    src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/airports-es.js"></script>
+<script type="text/javascript"
+    src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/airportscities-es.js"></script>
+<script type="text/javascript"
+    src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/buscompanies-es.js"></script>
+<script type="text/javascript"
+    src="https://d21cedz4ckebq9.cloudfront.net/autocompletes/buquebus/neighborhood-es.js"></script>
+
+
+<!-- js -->
+
+
+
+<script>
     let tabs = [
-        {tab:'hotel',text:'Alojamiento',icon:'fa-h-square'}
+        { tab: 'hotel', text: 'Alojamiento', icon: 'fa-h-square' }
     ];
-    </script>
-        
+</script>
 
-     
+
+
 <!-- end config tabs -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="js/jquery.bvalidator.js"></script>
-    <script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
-    <script src="js/jquery.popupoverlay.js"></script>
-    <script src="js/searchForm2.helper.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/jquery.bvalidator.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
+<script src="js/jquery.popupoverlay.js"></script>
+<script src="js/searchForm2.helper.js"></script>
 <!--end assets -->
 
 
@@ -59,7 +65,7 @@
                     <div id="divMobileTabsContent" class="mobile-tabs-content hidden-sm hidden-md hidden-lg">
                         <ul id="widget-tabs" class="nav navbar-nav widget-tabs ul-mobile-tabs sm" role="tablist">
 
-                    <!-- js/searchform2.widget.js -->
+                            <!-- js/searchform2.widget.js -->
 
                         </ul>
                     </div>
@@ -67,99 +73,132 @@
                 </div>
 
                 <!-- Tab panes -->
-                <div id="widget-tab-container" class="tab-content widget-tab-container">                    
-                <meta charset="UTF-8">
-<div role="tabpanel" class="tab-pane active" id="hotel">
-    <div id="NetacticaHotel" class="hotel-container container-fluid">
-        <!-- Hotel tab -->
-        <div id="HotelTitle" class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="product-title-container">
-                    <h3 class="hidden-sm hidden-md hidden-lg product-title hotel-title">Hoteles</h3>
-                </div>
-            </div>
-        </div>
-        <div id="HotelDestination" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="form-group hotel-destination destination-group">
-                <label class="hotel-dest-label dest-label" for="txtHotelCity">Destino:</label>
-                <div class="icon-input-group">
-                    <div id="divHotelCityControlMobile" class="input-mobile-control hidden-lg hidden-sm hidden-md" data-input-label="Ciudad de Destino" data-input-id="txtHotelCity" data-input-type="Cities"></div>
-                    <input type="text" id="txtHotelCity" name="txtHotelCity" class="txtHotelCity ac_input form-control hotel-dest-input dest-input ui-autocomplete-input" placeholder="Ingrese una Ciudad o un Hotel" data-bvalidator="required, autocomplete[city]" data-bvalidator-msg-required="La ciudad es requerida" data-bvalidator-msg-autocomplete="Debe seleccionar una ciudad desde el autocomplete" data-bvalidator-msg-validatesc="Debe seleccionar una ciudad desde el autocomplete" autocomplete="off">
-                    <i class="fa fa-map-marker input-icon input-icon-left" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-        <div id="HotelDatesRooms" class="col-xs-12 col-sm-8 col-md-3 col-lg-3">
-            <span class="lblDates">Fechas:</span>
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group hotel-checkindate checkindate-group">
-                        <div class="icon-input-group">
-                            <input type="text" id="txtHotelDateFrom" name="txtHotelDateFrom" class="txtHotelDateFrom form-control hotel-checkindate-input checkindate-input " readonly="readonly" placeholder="Entrada" data-bvalidator="required" data-bvalidator-msg-required="Seleccione una fecha">
-                            <i class="fa fa-calendar input-icon input-icon-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group hotel-checkindate checkindate-group">
-                        <div class="icon-input-group">
-                            <input type="text" id="txtHotelDateTo" name="txtHotelDateTo" class="txtHotelDateTo form-control hotel-checkoutdate-input checkoutdate-input " readonly="readonly" placeholder="Salida" data-bvalidator="required" data-bvalidator-msg-required="Seleccione una fecha">
-                            <i class="fa fa-calendar input-icon input-icon-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="roms" class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-            <div class="fdsHotelDetails">
-                <span class="lblRooms">Habitaciones:</span>
-                <div class="rooms-control row" id="divHotelRoomsGuests">
-                    <div id="divHotelPopUpControl" class="popup-control">
-                        <a id="hotelPopUpBtn" class="hotelPopUpBtn popup-control-btn" data-tooltipanchor="HotelPaxPopUp"></a>
-                    </div>
+                <div id="widget-tab-container" class="tab-content widget-tab-container">
+                    <meta charset="UTF-8">
+                    <div role="tabpanel" class="tab-pane active" id="hotel">
+                        <div id="NetacticaHotel" class="hotel-container container-fluid">
+                            <!-- Hotel tab -->
+                            <div id="HotelTitle" class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="product-title-container">
+                                        <h3 class="hidden-sm hidden-md hidden-lg product-title hotel-title">Hoteles</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="HotelDestination" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="form-group hotel-destination destination-group">
+                                    <label class="hotel-dest-label dest-label" for="txtHotelCity">Destino:</label>
+                                    <div class="icon-input-group">
+                                        <div id="divHotelCityControlMobile"
+                                            class="input-mobile-control hidden-lg hidden-sm hidden-md"
+                                            data-input-label="Ciudad de Destino" data-input-id="txtHotelCity"
+                                            data-input-type="Cities"></div>
+                                        <input type="text" id="txtHotelCity" name="txtHotelCity"
+                                            class="txtHotelCity ac_input form-control hotel-dest-input dest-input ui-autocomplete-input"
+                                            placeholder="Ingrese una Ciudad o un Hotel"
+                                            data-bvalidator="required, autocomplete[city]"
+                                            data-bvalidator-msg-required="La ciudad es requerida"
+                                            data-bvalidator-msg-autocomplete="Debe seleccionar una ciudad desde el autocomplete"
+                                            data-bvalidator-msg-validatesc="Debe seleccionar una ciudad desde el autocomplete"
+                                            autocomplete="off">
+                                        <i class="fa fa-map-marker input-icon input-icon-left" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="HotelDatesRooms" class="col-xs-12 col-sm-8 col-md-3 col-lg-3">
+                                <span class="lblDates">Fechas:</span>
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group hotel-checkindate checkindate-group">
+                                            <div class="icon-input-group">
+                                                <input type="text" id="txtHotelDateFrom" name="txtHotelDateFrom"
+                                                    class="txtHotelDateFrom form-control hotel-checkindate-input checkindate-input "
+                                                    readonly="readonly" placeholder="Entrada" data-bvalidator="required"
+                                                    data-bvalidator-msg-required="Seleccione una fecha">
+                                                <i class="fa fa-calendar input-icon input-icon-left"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group hotel-checkindate checkindate-group">
+                                            <div class="icon-input-group">
+                                                <input type="text" id="txtHotelDateTo" name="txtHotelDateTo"
+                                                    class="txtHotelDateTo form-control hotel-checkoutdate-input checkoutdate-input "
+                                                    readonly="readonly" placeholder="Salida" data-bvalidator="required"
+                                                    data-bvalidator-msg-required="Seleccione una fecha">
+                                                <i class="fa fa-calendar input-icon input-icon-left"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="roms" class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="fdsHotelDetails">
+                                    <span class="lblRooms">Habitaciones:</span>
+                                    <div class="rooms-control row" id="divHotelRoomsGuests">
+                                        <div id="divHotelPopUpControl" class="popup-control">
+                                            <a id="hotelPopUpBtn" class="hotelPopUpBtn popup-control-btn"
+                                                data-tooltipanchor="HotelPaxPopUp"></a>
+                                        </div>
 
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <div class="input-room-container room-info">
-                            <div class="icon-input-group">
-                                <i class="fa fa-bed input-icon input-icon-left" aria-hidden="true"></i>
-                                <input id="txtHotelNumberRooms" type="text" class="form-control hotel-number-rooms hotel-rooms-input custom-room-input" data-bvalidator-msg-validatemaxpassenger="El número de pasajeros no puede ser mayor a 7" data-bvalidator="validateMaxPassenger[#widget-01:Hotel:7]">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <div class="input-room-container room-info">
+                                                <div class="icon-input-group">
+                                                    <i class="fa fa-bed input-icon input-icon-left"
+                                                        aria-hidden="true"></i>
+                                                    <input id="txtHotelNumberRooms" type="text"
+                                                        class="form-control hotel-number-rooms hotel-rooms-input custom-room-input"
+                                                        data-bvalidator-msg-validatemaxpassenger="El número de pasajeros no puede ser mayor a 7"
+                                                        data-bvalidator="validateMaxPassenger[#widget-01:Hotel:7]">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                            <div class="input-room-container guests-info">
+                                                <div class="icon-input-group">
+                                                    <i class="fa fa-user input-icon input-icon-left"
+                                                        aria-hidden="true"></i>
+                                                    <input id="txtHotelNumberPassenger" type="text"
+                                                        class="form-control hotel-rooms-input hotel-number-passenger custom-guests-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="hdnHotelPassengers"
+                                        value="[{&quot;Room&quot;:&quot;1&quot;,&quot;Adults&quot;:&quot;1&quot;,&quot;Childs&quot;:&quot;0&quot;,&quot;AgeChilds&quot;:&quot;&quot;}]">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <div class="input-room-container guests-info">
-                            <div class="icon-input-group">
-                                <i class="fa fa-user input-icon input-icon-left" aria-hidden="true"></i>
-                                <input id="txtHotelNumberPassenger" type="text" class="form-control hotel-rooms-input hotel-number-passenger custom-guests-input">
+                            <div id="divHotelTogglePromoCode" class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                                <div class="divHotelTogglePromoCodePanel form-group promo-code-group">
+                                    <a class="promocode-btn" role="button" data-toggle="collapse"
+                                        href="#divCollapseHotelPromoCode" aria-expanded="false"
+                                        aria-controls="divCollapseHotelPromoCode">
+                                        <span>Código Promocional</span> <i class="fa fa-caret-down"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                    <div class="collapse" id="divCollapseHotelPromoCode">
+                                        <div id="divHotelPromoCode" class="divHotelPromoCode promo-code-container">
+                                            <div class="icon-input-group">
+                                                <input type="text" id="txtHotelPromoCode"
+                                                    class="form-control txtHotelPromoCode promocode-input"
+                                                    placeholder="Código Promocional">
+                                                <i class="fa fa-tag input-icon input-icon-left" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BtnHotel" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                <div class="hotel-btn-control btn-search-container">
+                                    <input type="button" id="btnSearchHotel" name="btnSearchHotel"
+                                        class="btn btn-default btnSearch btnSearchHotel" value="Buscar">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <input type="hidden" id="hdnHotelPassengers" value="[{&quot;Room&quot;:&quot;1&quot;,&quot;Adults&quot;:&quot;1&quot;,&quot;Childs&quot;:&quot;0&quot;,&quot;AgeChilds&quot;:&quot;&quot;}]">
-            </div>
-        </div>
-        <div id="divHotelTogglePromoCode" class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-            <div class="divHotelTogglePromoCodePanel form-group promo-code-group">
-                <a class="promocode-btn" role="button" data-toggle="collapse" href="#divCollapseHotelPromoCode" aria-expanded="false" aria-controls="divCollapseHotelPromoCode">
-                    <span>Código Promocional</span> <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </a>
-                <div class="collapse" id="divCollapseHotelPromoCode">
-                    <div id="divHotelPromoCode" class="divHotelPromoCode promo-code-container">
-                        <div class="icon-input-group">
-                            <input type="text" id="txtHotelPromoCode" class="form-control txtHotelPromoCode promocode-input" placeholder="Código Promocional">
-                            <i class="fa fa-tag input-icon input-icon-left" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="BtnHotel" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-            <div class="hotel-btn-control btn-search-container">
-                <input type="button" id="btnSearchHotel" name="btnSearchHotel" class="btn btn-default btnSearch btnSearchHotel" value="Buscar">
-            </div>
-        </div>                    
-    </div>
-</div></div>
 
                 <!-- Pax Popups -->
                 <div id="divPaxPopup" class="pop-up-control-container" data-prod="">
@@ -185,15 +224,20 @@
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                                     <div class="input-group">
                                         <span class="input-group-btn">
-                                            <button id="btnAdtPaxMinus" type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxAdtQuantity">
+                                            <button id="btnAdtPaxMinus" type="button"
+                                                class="quantity-left-minus btn btn-default btn-number" data-type="minus"
+                                                data-field="paxAdtQuantity">
                                                 <span class="glyphicon glyphicon-minus"></span>
-                                        </button>
+                                            </button>
                                         </span>
-                                        <input type="text" id="paxAdtQuantity" name="paxAdtQuantity" class="form-control input-number" min="1" max="7" readonly="">
+                                        <input type="text" id="paxAdtQuantity" name="paxAdtQuantity"
+                                            class="form-control input-number" min="1" max="7" readonly="">
                                         <span class="input-group-btn">
-                                            <button id="btnAdtPaxPlus" type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxAdtQuantity">
+                                            <button id="btnAdtPaxPlus" type="button"
+                                                class="quantity-right-plus btn btn-default btn-number" data-type="plus"
+                                                data-field="paxAdtQuantity">
                                                 <span class="glyphicon glyphicon-plus"></span>
-                                        </button>
+                                            </button>
                                         </span>
                                     </div>
                                 </div>
@@ -206,15 +250,20 @@
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                                     <div class="input-group">
                                         <span class="input-group-btn">
-                                            <button id="btnChdPaxMinus" type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxChdQuantity">
+                                            <button id="btnChdPaxMinus" type="button"
+                                                class="quantity-left-minus btn btn-default btn-number" data-type="minus"
+                                                data-field="paxChdQuantity">
                                                 <span class="glyphicon glyphicon-minus"></span>
-                                        </button>
+                                            </button>
                                         </span>
-                                        <input type="text" id="paxChdQuantity" name="paxChdQuantity" class="form-control input-number" min="0" max="5" readonly="">
+                                        <input type="text" id="paxChdQuantity" name="paxChdQuantity"
+                                            class="form-control input-number" min="0" max="5" readonly="">
                                         <span class="input-group-btn">
-                                            <button id="btnChdPaxPlus" type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxChdQuantity">
+                                            <button id="btnChdPaxPlus" type="button"
+                                                class="quantity-right-plus btn btn-default btn-number" data-type="plus"
+                                                data-field="paxChdQuantity">
                                                 <span class="glyphicon glyphicon-plus"></span>
-                                        </button>
+                                            </button>
                                         </span>
                                     </div>
                                 </div>
@@ -227,15 +276,20 @@
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                                     <div class="input-group">
                                         <span class="input-group-btn">
-                                            <button id="btnInfPaxMinus" type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxInfQuantity">
+                                            <button id="btnInfPaxMinus" type="button"
+                                                class="quantity-left-minus btn btn-default btn-number" data-type="minus"
+                                                data-field="paxInfQuantity">
                                                 <span class="glyphicon glyphicon-minus"></span>
-                                        </button>
+                                            </button>
                                         </span>
-                                        <input type="text" id="paxInfQuantity" name="paxInfQuantity" class="form-control input-number" min="0" max="2" readonly="">
+                                        <input type="text" id="paxInfQuantity" name="paxInfQuantity"
+                                            class="form-control input-number" min="0" max="2" readonly="">
                                         <span class="input-group-btn">
-                                            <button id="btnInfPaxPlus" type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxInfQuantity">
+                                            <button id="btnInfPaxPlus" type="button"
+                                                class="quantity-right-plus btn btn-default btn-number" data-type="plus"
+                                                data-field="paxInfQuantity">
                                                 <span class="glyphicon glyphicon-plus"></span>
-                                        </button>
+                                            </button>
                                         </span>
                                     </div>
                                 </div>
@@ -246,317 +300,453 @@
                         </div>
                     </div>
                 </div>
-                <div id="divPaxRoomPopup_wrapper" class="popup_wrapper popup_wrapper_visible" style="opacity: 1; visibility: visible; position: absolute; z-index: 100001; transition: all 0.3s ease 0.1s;display:none;"><div id="divPaxRoomPopup" class="pop-up-control-container popup_content" data-prod="AirHotel" data-qty-rooms="1" data-popup-initialized="true" aria-hidden="false" role="dialog" style="opacity: 1; visibility: visible; display: inline-block; outline: none; transition: all 0.3s ease 0.1s;" tabindex="-1">
-                    <div class="pop-up-main">
-            
-                        <div class="top-arrow"><i class="fa fa-caret-up fa-2x"></i></div>
-                        <div class="hidden-lg">
-                            <div class="hidden-lg pop-up-title">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <h2 class="center">Habitaciones</h2>
-                                        <a id="aClosePaxRoomPopup" class="pop-up-close">
-                                            <i class="fa fa-times fa-x"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pop-up-content">
-                            <div id="divPaxRoomControl" class="row room-pax-control">
-                                <div id="room1" data-roomid="1">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title">
-                                        <h4 class="pull-left">Habitación 1</h4>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Adultos</p>
-                                                <span data-type="adt">13 ó + años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom1AdtQuantity" disabled="disabled">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom1AdtQuantity" name="paxRoomAdtQuantity" class="form-control input-number" min="1" max="7" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom1AdtQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Niños</p>
-                                                <span data-type="chd">0 a 12 años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom1ChdQuantity" disabled="disabled">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom1ChdQuantity" name="paxRoomChdQuantity" class="form-control input-number" min="0" max="4" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom1ChdQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div id="divRoom1ChildrensAge" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control" style="display: none;">
-                                                <div class="row">
-                                                    <div id="divRoom1ChildAge1" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 1</label>
-                                                        <select id="ddlRoom1ChildAge1" data-index="0" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom1ChildAge2" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 2</label>
-                                                        <select id="ddlRoom1ChildAge2" data-index="1" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom1ChildAge3" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 3</label>
-                                                        <select id="ddlRoom1ChildAge3" data-index="2" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom1ChildAge4" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 4</label>
-                                                        <select id="ddlRoom1ChildAge4" data-index="3" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="room2" data-roomid="2" style="display: none;">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title-alt">
-                                        <h4 class="pull-left">Habitación 2</h4>
-                                        <a id="delRoom2PaxRoomPopup" href="javascript:void(0);" class="pull-right btn-rooms-pax-links" style="display: none;">Eliminar</a>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Adultos</p>
-                                                <span data-type="adt">13 ó + años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom2AdtQuantity">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom2AdtQuantity" name="paxRoomAdtQuantity" class="form-control input-number" min="1" max="7" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom2AdtQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Niños</p>
-                                                <span data-type="chd">0 a 12 años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom2ChdQuantity">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom2ChdQuantity" name="paxRoomChdQuantity" class="form-control input-number" min="0" max="4" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom2ChdQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div id="divRoom2ChildrensAge" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control" style="display: none;">
-                                                <div class="row">
-                                                    <div id="divRoom2ChildAge1" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 1</label>
-                                                        <select id="ddlRoom2ChildAge1" data-index="0" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom2ChildAge2" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 2</label>
-                                                        <select id="ddlRoom2ChildAge2" data-index="1" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom2ChildAge3" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 3</label>
-                                                        <select id="ddlRoom2ChildAge3" data-index="2" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom2ChildAge4" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 4</label>
-                                                        <select id="ddlRoom2ChildAge4" data-index="3" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="room3" data-roomid="3" style="display: none;">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title-alt">
-                                        <h4 class="pull-left">Habitación 3</h4>
-                                        <a id="delRoom3PaxRoomPopup" href="javascript:void(0);" class="pull-right btn-rooms-pax-links" style="display: none;">Eliminar</a>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Adultos</p>
-                                                <span data-type="adt">13 ó + años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom3AdtQuantity">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom3AdtQuantity" name="paxRoomAdtQuantity" class="form-control input-number" min="1" max="7" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom3AdtQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Niños</p>
-                                                <span data-type="chd">0 a 12 años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom3ChdQuantity">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom3ChdQuantity" name="paxRoomChdQuantity" class="form-control input-number" min="0" max="4" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom3ChdQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div id="divRoom3ChildrensAge" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control" style="display: none;">
-                                                <div class="row">
-                                                    <div id="divRoom3ChildAge1" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 1</label>
-                                                        <select id="ddlRoom3ChildAge1" data-index="0" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom3ChildAge2" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 2</label>
-                                                        <select id="ddlRoom3ChildAge2" data-index="1" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom3ChildAge3" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 3</label>
-                                                        <select id="ddlRoom3ChildAge3" data-index="2" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom3ChildAge4" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 4</label>
-                                                        <select id="ddlRoom3ChildAge4" data-index="3" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="room4" data-roomid="4" style="display: none;">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title-alt">
-                                        <h4 class="pull-left">Habitación 4</h4>
-                                        <a id="delRoom4PaxRoomPopup" href="javascript:void(0);" class="pull-right btn-rooms-pax-links" style="display: none;">Eliminar</a>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Adultos</p>
-                                                <span data-type="adt">13 ó + años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom4AdtQuantity">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom4AdtQuantity" name="paxRoomAdtQuantity" class="form-control input-number" min="1" max="7" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom4AdtQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row pax-number-block">
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-                                                <p>Niños</p>
-                                                <span data-type="chd">0 a 12 años</span>
-                                            </div>
-                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                <div class="input-group">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-left-minus btn btn-default btn-number" data-type="minus" data-field="paxRoom4ChdQuantity">
-                                                            <span class="glyphicon glyphicon-minus"></span>
-                                                        </button>
-                                                    </span>
-                                                    <input type="text" id="paxRoom4ChdQuantity" name="paxRoomChdQuantity" class="form-control input-number" min="0" max="4" readonly="">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="quantity-right-plus btn btn-default btn-number" data-type="plus" data-field="paxRoom4ChdQuantity">
-                                                            <span class="glyphicon glyphicon-plus"></span>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div id="divRoom3ChildrensAge" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control" style="display: none;">
-                                                <div class="row">
-                                                    <div id="divRoom4ChildAge1" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 1</label>
-                                                        <select id="ddlRoom4ChildAge1" data-index="0" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom4ChildAge2" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 2</label>
-                                                        <select id="ddlRoom4ChildAge2" data-index="1" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom4ChildAge3" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 3</label>
-                                                        <select id="ddlRoom4ChildAge3" data-index="2" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                    <div id="divRoom4ChildAge4" class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6" style="display: none;">
-                                                        <label class="childrens-age-label">Edad niño 4</label>
-                                                        <select id="ddlRoom4ChildAge4" data-index="3" class="childrens-age form-control"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                <div id="divPaxRoomPopup_wrapper" class="popup_wrapper popup_wrapper_visible"
+                    style="opacity: 1; visibility: visible; position: absolute; z-index: 100001; transition: all 0.3s ease 0.1s;display:none;">
+                    <div id="divPaxRoomPopup" class="pop-up-control-container popup_content" data-prod="AirHotel"
+                        data-qty-rooms="1" data-popup-initialized="true" aria-hidden="false" role="dialog"
+                        style="opacity: 1; visibility: visible; display: inline-block; outline: none; transition: all 0.3s ease 0.1s;"
+                        tabindex="-1">
+                        <div class="pop-up-main">
+
+                            <div class="top-arrow"><i class="fa fa-caret-up fa-2x"></i></div>
+                            <div class="hidden-lg">
+                                <div class="hidden-lg pop-up-title">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <h2 class="center">Habitaciones</h2>
+                                            <a id="aClosePaxRoomPopup" class="pop-up-close">
+                                                <i class="fa fa-times fa-x"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="pop-up-action">
-                            <div class="room-pax-controllers">
-                                <div class="room-add-control">
-                                    <a id="addRoomPaxRoomPopup" href="javascript:void(0);" class="pull-left btn-rooms-pax-links">Agregar habitación</a>
+                            <div class="pop-up-content">
+                                <div id="divPaxRoomControl" class="row room-pax-control">
+                                    <div id="room1" data-roomid="1">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title">
+                                            <h4 class="pull-left">Habitación 1</h4>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Adultos</p>
+                                                    <span data-type="adt">13 ó + años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom1AdtQuantity"
+                                                                disabled="disabled">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom1AdtQuantity"
+                                                            name="paxRoomAdtQuantity" class="form-control input-number"
+                                                            min="1" max="7" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom1AdtQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Niños</p>
+                                                    <span data-type="chd">0 a 12 años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom1ChdQuantity"
+                                                                disabled="disabled">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom1ChdQuantity"
+                                                            name="paxRoomChdQuantity" class="form-control input-number"
+                                                            min="0" max="4" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom1ChdQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div id="divRoom1ChildrensAge"
+                                                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control"
+                                                    style="display: none;">
+                                                    <div class="row">
+                                                        <div id="divRoom1ChildAge1"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 1</label>
+                                                            <select id="ddlRoom1ChildAge1" data-index="0"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom1ChildAge2"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 2</label>
+                                                            <select id="ddlRoom1ChildAge2" data-index="1"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom1ChildAge3"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 3</label>
+                                                            <select id="ddlRoom1ChildAge3" data-index="2"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom1ChildAge4"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 4</label>
+                                                            <select id="ddlRoom1ChildAge4" data-index="3"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="room2" data-roomid="2" style="display: none;">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title-alt">
+                                            <h4 class="pull-left">Habitación 2</h4>
+                                            <a id="delRoom2PaxRoomPopup" href="javascript:void(0);"
+                                                class="pull-right btn-rooms-pax-links"
+                                                style="display: none;">Eliminar</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Adultos</p>
+                                                    <span data-type="adt">13 ó + años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom2AdtQuantity">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom2AdtQuantity"
+                                                            name="paxRoomAdtQuantity" class="form-control input-number"
+                                                            min="1" max="7" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom2AdtQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Niños</p>
+                                                    <span data-type="chd">0 a 12 años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom2ChdQuantity">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom2ChdQuantity"
+                                                            name="paxRoomChdQuantity" class="form-control input-number"
+                                                            min="0" max="4" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom2ChdQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div id="divRoom2ChildrensAge"
+                                                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control"
+                                                    style="display: none;">
+                                                    <div class="row">
+                                                        <div id="divRoom2ChildAge1"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 1</label>
+                                                            <select id="ddlRoom2ChildAge1" data-index="0"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom2ChildAge2"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 2</label>
+                                                            <select id="ddlRoom2ChildAge2" data-index="1"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom2ChildAge3"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 3</label>
+                                                            <select id="ddlRoom2ChildAge3" data-index="2"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom2ChildAge4"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 4</label>
+                                                            <select id="ddlRoom2ChildAge4" data-index="3"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="room3" data-roomid="3" style="display: none;">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title-alt">
+                                            <h4 class="pull-left">Habitación 3</h4>
+                                            <a id="delRoom3PaxRoomPopup" href="javascript:void(0);"
+                                                class="pull-right btn-rooms-pax-links"
+                                                style="display: none;">Eliminar</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Adultos</p>
+                                                    <span data-type="adt">13 ó + años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom3AdtQuantity">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom3AdtQuantity"
+                                                            name="paxRoomAdtQuantity" class="form-control input-number"
+                                                            min="1" max="7" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom3AdtQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Niños</p>
+                                                    <span data-type="chd">0 a 12 años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom3ChdQuantity">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom3ChdQuantity"
+                                                            name="paxRoomChdQuantity" class="form-control input-number"
+                                                            min="0" max="4" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom3ChdQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div id="divRoom3ChildrensAge"
+                                                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control"
+                                                    style="display: none;">
+                                                    <div class="row">
+                                                        <div id="divRoom3ChildAge1"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 1</label>
+                                                            <select id="ddlRoom3ChildAge1" data-index="0"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom3ChildAge2"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 2</label>
+                                                            <select id="ddlRoom3ChildAge2" data-index="1"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom3ChildAge3"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 3</label>
+                                                            <select id="ddlRoom3ChildAge3" data-index="2"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom3ChildAge4"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 4</label>
+                                                            <select id="ddlRoom3ChildAge4" data-index="3"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="room4" data-roomid="4" style="display: none;">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-number-title-alt">
+                                            <h4 class="pull-left">Habitación 4</h4>
+                                            <a id="delRoom4PaxRoomPopup" href="javascript:void(0);"
+                                                class="pull-right btn-rooms-pax-links"
+                                                style="display: none;">Eliminar</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Adultos</p>
+                                                    <span data-type="adt">13 ó + años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom4AdtQuantity">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom4AdtQuantity"
+                                                            name="paxRoomAdtQuantity" class="form-control input-number"
+                                                            min="1" max="7" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom4AdtQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pax-number-block">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                                                    <p>Niños</p>
+                                                    <span data-type="chd">0 a 12 años</span>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-left-minus btn btn-default btn-number"
+                                                                data-type="minus" data-field="paxRoom4ChdQuantity">
+                                                                <span class="glyphicon glyphicon-minus"></span>
+                                                            </button>
+                                                        </span>
+                                                        <input type="text" id="paxRoom4ChdQuantity"
+                                                            name="paxRoomChdQuantity" class="form-control input-number"
+                                                            min="0" max="4" readonly="">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                class="quantity-right-plus btn btn-default btn-number"
+                                                                data-type="plus" data-field="paxRoom4ChdQuantity">
+                                                                <span class="glyphicon glyphicon-plus"></span>
+                                                            </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div id="divRoom3ChildrensAge"
+                                                    class="col-xs-12 col-sm-12 col-md-12 col-lg-12 childrens-age-control"
+                                                    style="display: none;">
+                                                    <div class="row">
+                                                        <div id="divRoom4ChildAge1"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 1</label>
+                                                            <select id="ddlRoom4ChildAge1" data-index="0"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom4ChildAge2"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 2</label>
+                                                            <select id="ddlRoom4ChildAge2" data-index="1"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom4ChildAge3"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 3</label>
+                                                            <select id="ddlRoom4ChildAge3" data-index="2"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                        <div id="divRoom4ChildAge4"
+                                                            class="divRoomChildAge col-xs-6 col-sm-6 col-md-6 col-lg-6"
+                                                            style="display: none;">
+                                                            <label class="childrens-age-label">Edad niño 4</label>
+                                                            <select id="ddlRoom4ChildAge4" data-index="3"
+                                                                class="childrens-age form-control">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="btn-container">
-                                    <button id="btnClosePaxRoomPopup" type="button" class="btn btn-default pull-right">Aplicar</button>
+                            </div>
+                            <div class="pop-up-action">
+                                <div class="room-pax-controllers">
+                                    <div class="room-add-control">
+                                        <a id="addRoomPaxRoomPopup" href="javascript:void(0);"
+                                            class="pull-left btn-rooms-pax-links">Agregar habitación</a>
+                                    </div>
+                                    <div class="btn-container">
+                                        <button id="btnClosePaxRoomPopup" type="button"
+                                            class="btn btn-default pull-right">Aplicar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div></div>
+                </div>
                 <!-- Autocomplete mobile popup-->
                 <div id="divAutoCompleteMobileContainer">
                     <div class="container">
@@ -572,11 +762,17 @@
                             <div class="col-xs-12">
                                 <div class="form-group form-inline">
                                     <div class="destination-mobile-group">
-                                        <label id="lblMobileAutocomplete" class="mobile-dest-label dest-label" for="txtMobileAutocomplete"></label>
+                                        <label id="lblMobileAutocomplete" class="mobile-dest-label dest-label"
+                                            for="txtMobileAutocomplete"></label>
                                         <div class="icon-input-group">
-                                            <input type="text" id="txtMobileAutocomplete" class="input_mobile_autocomplete ac_input form-control air-dest-input dest-input " placeholder="">
-                                            <input type="text" id="txtMobileAutocompleteSc" class="input_mobile_autocomplete ac_input form-control air-dest-input dest-input ui-autocomplete-input" autocomplete="off">
-                                            <i class="fa fa-map-marker input-icon input-icon-left" aria-hidden="true"></i>
+                                            <input type="text" id="txtMobileAutocomplete"
+                                                class="input_mobile_autocomplete ac_input form-control air-dest-input dest-input "
+                                                placeholder="">
+                                            <input type="text" id="txtMobileAutocompleteSc"
+                                                class="input_mobile_autocomplete ac_input form-control air-dest-input dest-input ui-autocomplete-input"
+                                                autocomplete="off">
+                                            <i class="fa fa-map-marker input-icon input-icon-left"
+                                                aria-hidden="true"></i>
 
                                         </div>
                                     </div>
@@ -608,15 +804,18 @@
 
                 <input id="PortalConfig" name="PortalConfig" type="hidden" value="">
                 <input id="ListCodes" name="ListCodes" type="hidden" value="[]">
-                <input id="GeoLocationProducts" name="GeoLocationProducts" type="hidden" value="[{&quot;Product&quot;:&quot;AirProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;HotelProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;ExtraProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;AirHotelProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;BusProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;BusHotelProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;AirCarProduct&quot;,&quot;Enabled&quot;:false}]">
-                <input id="ExtraProduct_Types" name="ExtraProduct.Types" type="hidden" value="[{&quot;Id&quot;:-1,&quot;TypeId&quot;:1,&quot;Name&quot;:&quot;Actividades acuáticas&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:12,&quot;Name&quot;:&quot;Actividades de Golf&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:15,&quot;Name&quot;:&quot;Actividades de Ski&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:26,&quot;Name&quot;:&quot;Almuerzo&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:0,&quot;Name&quot;:&quot;Aventura&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:3,&quot;Name&quot;:&quot;Boletos&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:16,&quot;Name&quot;:&quot;Boletos de Aerosilla&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:20,&quot;Name&quot;:&quot;Bus&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:29,&quot;Name&quot;:&quot;Campamento&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:11,&quot;Name&quot;:&quot;Casamientos&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:2,&quot;Name&quot;:&quot;Cena&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:21,&quot;Name&quot;:&quot;Cena Show&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:22,&quot;Name&quot;:&quot;City Tour&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:14,&quot;Name&quot;:&quot;Cobro a tarjetas de credito&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:23,&quot;Name&quot;:&quot;Comida&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:28,&quot;Name&quot;:&quot;Curso&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:24,&quot;Name&quot;:&quot;Entrevistas&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:13,&quot;Name&quot;:&quot;Extras de Aereos&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:4,&quot;Name&quot;:&quot;Golf&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:6,&quot;Name&quot;:&quot;Otros servicios&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:30,&quot;Name&quot;:&quot;Paquete&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:10,&quot;Name&quot;:&quot;Parques de atracciones&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:7,&quot;Name&quot;:&quot;Paseos de compras&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:18,&quot;Name&quot;:&quot;Seguro de viaje&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:25,&quot;Name&quot;:&quot;Show&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:8,&quot;Name&quot;:&quot;Spa&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:9,&quot;Name&quot;:&quot;Tours y Excursiones&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:5,&quot;Name&quot;:&quot;Transfers&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:27,&quot;Name&quot;:&quot;Traslado Aéreo&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:17,&quot;Name&quot;:&quot;Tren&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:19,&quot;Name&quot;:&quot;Visa&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;}]">
-                <input id="GeoLocationProducts" name="GeoLocationProducts" type="hidden" value="[{&quot;Product&quot;:&quot;HotelProduct&quot;,&quot;Enabled&quot;:false}]">
+                <input id="GeoLocationProducts" name="GeoLocationProducts" type="hidden"
+                    value="[{&quot;Product&quot;:&quot;AirProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;HotelProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;ExtraProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;AirHotelProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;BusProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;BusHotelProduct&quot;,&quot;Enabled&quot;:false},{&quot;Product&quot;:&quot;AirCarProduct&quot;,&quot;Enabled&quot;:false}]">
+                <input id="ExtraProduct_Types" name="ExtraProduct.Types" type="hidden"
+                    value="[{&quot;Id&quot;:-1,&quot;TypeId&quot;:1,&quot;Name&quot;:&quot;Actividades acuáticas&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:12,&quot;Name&quot;:&quot;Actividades de Golf&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:15,&quot;Name&quot;:&quot;Actividades de Ski&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:26,&quot;Name&quot;:&quot;Almuerzo&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:0,&quot;Name&quot;:&quot;Aventura&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:3,&quot;Name&quot;:&quot;Boletos&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:16,&quot;Name&quot;:&quot;Boletos de Aerosilla&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:20,&quot;Name&quot;:&quot;Bus&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:29,&quot;Name&quot;:&quot;Campamento&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:11,&quot;Name&quot;:&quot;Casamientos&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:2,&quot;Name&quot;:&quot;Cena&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:21,&quot;Name&quot;:&quot;Cena Show&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:22,&quot;Name&quot;:&quot;City Tour&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:14,&quot;Name&quot;:&quot;Cobro a tarjetas de credito&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:23,&quot;Name&quot;:&quot;Comida&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:28,&quot;Name&quot;:&quot;Curso&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:24,&quot;Name&quot;:&quot;Entrevistas&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:13,&quot;Name&quot;:&quot;Extras de Aereos&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:4,&quot;Name&quot;:&quot;Golf&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:6,&quot;Name&quot;:&quot;Otros servicios&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:30,&quot;Name&quot;:&quot;Paquete&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:10,&quot;Name&quot;:&quot;Parques de atracciones&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:7,&quot;Name&quot;:&quot;Paseos de compras&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:18,&quot;Name&quot;:&quot;Seguro de viaje&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:25,&quot;Name&quot;:&quot;Show&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:8,&quot;Name&quot;:&quot;Spa&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:9,&quot;Name&quot;:&quot;Tours y Excursiones&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:5,&quot;Name&quot;:&quot;Transfers&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:27,&quot;Name&quot;:&quot;Traslado Aéreo&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:17,&quot;Name&quot;:&quot;Tren&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;},{&quot;Id&quot;:-1,&quot;TypeId&quot;:19,&quot;Name&quot;:&quot;Visa&quot;,&quot;Checked&quot;:false,&quot;ActionType&quot;:&quot;NA&quot;}]">
+                <input id="GeoLocationProducts" name="GeoLocationProducts" type="hidden"
+                    value="[{&quot;Product&quot;:&quot;HotelProduct&quot;,&quot;Enabled&quot;:false}]">
             </div>
         </div>
 
-    <script src="js/searchForm2.widget.js"></script>
-    <script src="js/widget.settings.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+        <script src="js/searchForm2.widget.js"></script>
+        <script src="js/widget.settings.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     </div>
 
 
