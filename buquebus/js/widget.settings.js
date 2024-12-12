@@ -22,7 +22,7 @@ var widgetSettings = (function () {
           var widgetProductsSettings = [
             {
               AirFlexDateEnabled: false,
-              HotelsMaxAgeChild: 12,
+              HotelsMaxAgeChild: 17,
               TravelExtraMaxDaysAllowedSearch: 365,
               MaxPassengerSearch: 12,
               PromoCodeAllowed: false,
